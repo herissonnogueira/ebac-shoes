@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    padding: 16px 0;
+}
+
+header, li a {
+    background-color: #4682B4;
+    color: #fff;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-style: italic;
+}
+
+.container {
+    display: flex;
+    max-width: 1024px;
+    margin: 0 auto;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li {
+    float: left;
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.container > img {
+    width: 400px;
+    margin-top: 40px;
+    margin-right: 42px;
+}
+
+section .container {
+    align-items: flex-start;
+}
+
+h2 {
+    font-size: 1.7em;
+    color: #4682B4;
+    font-style: italic;
+    margin-top: 40px;
+    border-bottom: 2px solid #4169E1;
+    width: 100%;
+    padding-bottom: 16px;
+    margin-bottom: 36px;
+}
+
+.produto {
+    flex-direction: column;
+}
+
+#produtos img {
+    width: 100%;
+    margin: 5px;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin: 16px 0;
+}
+
+#produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+#produtos li {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 8px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4682B4;
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+    margin: 16px 0;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2445a8;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 640px) {
+    .sobre-a-loja {
+        display: block;
+    }
+
+    .container > img {
+        width: 100%;
+    }
+
+    #produtos {
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+
+    .sobre-a-loja {
+        display: block;
+    }
+
+    .container > img {
+        width:100%;
+    }
+
+    #produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 2%;
+        justify-content: center;
+    }
+}
